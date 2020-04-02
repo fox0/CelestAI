@@ -1,0 +1,18 @@
+[MASTER]
+jobs=0
+
+[FORMAT]
+max-line-length=121
+
+[BASIC]
+good-names=i,
+           j,
+           k,
+           ex,
+           log
+
+[MISCELLANEOUS]
+notes=FIXME,
+      XXX,
+      TODO,
+      000
