@@ -1,6 +1,7 @@
 numpy
 matplotlib
 numba
+cython
 
 # apt install python3.8-dev libluajit-5.1-dev
 # pip lupa --no-binary lupa

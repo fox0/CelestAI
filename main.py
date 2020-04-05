@@ -31,4 +31,9 @@ def print_state(state: list):
 if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s [%(levelname)s] %(name)s %(funcName)s():%(lineno)d: %(message)s',
                         level=logging.DEBUG)
-    main()
+    # main()
+
+    # import pyximport; pyximport.install(pyimport=True)
+    from stuff.module import c_compare
+
+    print(c_compare(2, 2))

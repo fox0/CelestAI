@@ -64,6 +64,8 @@ class Node:
     an explanation of how the f and h values are handled. You will not need to
     subclass this class."""
 
+    # __slots__ = 'state', 'parent', 'action', 'path_cost', 'depth', #h
+
     def __init__(self, state, parent=None, action=None, path_cost=0):
         """Create a search tree Node, derived from a parent by an action."""
         self.state = state
