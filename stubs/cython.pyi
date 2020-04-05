@@ -1,10 +1,12 @@
 from typing import TypeVar as __TypeVar, Any as __Any
 
+# http://docs.cython.org/en/latest/src/tutorial/pure.html
+
 # functions
 __T = __TypeVar('__T')
 
 
-def declare(type_: __T, value=None) -> __T:
+def declare(type_: __T, value=None, visibility='private') -> __T:
     """
     declare declares a typed variable in the current scope, which can be used in place of the
     cdef type var [= value] construct. This has two forms, the first as an assignment
@@ -83,7 +85,7 @@ Py_ssize_t = int
 
 double = float
 p_double = float
-
+complex = complex
 
 # cython.pointer(cython.int)
 # arrays as cython.int[10]

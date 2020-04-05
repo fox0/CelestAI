@@ -1,7 +1,8 @@
 numpy
 matplotlib
 numba
-cython
+
+# cython  # numba быстрее засчёт jit
 
 # apt install python3.8-dev libluajit-5.1-dev
 # pip lupa --no-binary lupa
